@@ -1,1 +1,56 @@
-<p>data-binding new works!</p>
+<section>
+
+<!--
+<p>O curso de angular e gosto do curso {{ CurtirCurso && CursAngular() }}</p>
+
+<section>
+    <article>
+        <h3>Property Binding</h3>
+        <img src="{{ urlImage }}"> interpolação
+        <img [src]="urlImage"> property binding 
+        <img bind-src="urlImage">Mesmo que o exemplo de cima
+    </article>
+</section>-->
+
+<article>
+    <h3>
+        Binding CSS & Class
+        </h3>
+        <br><br>
+        <div>
+            Selecione uma classe:
+            <select #classe (change="0")>
+                  <option value="alert-success" role="alert">
+                     success 
+                  </option>
+                  <option value="alert-danger" role="alert">
+                    danger 
+                  </option>
+                  <option value="alert-warning" role="alert">
+                     warning
+                  </option>
+                  <option value="alert-info" role="alert">
+                 info 
+                  </option>
+            </select>
+            
+            <br><br>
+
+              <div class="alert" role="alert">
+               success
+              </div>
+              <div class="alert" role="alert">
+               danger 
+              </div>
+              <div class="alert" role="alert">
+                warning
+              </div>
+              <div class="alert" role="alert">
+              info 
+              </div>
+           
+        </div>
+    
+</article>
+</section>
+
