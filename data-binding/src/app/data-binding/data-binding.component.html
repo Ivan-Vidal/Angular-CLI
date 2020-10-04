@@ -19,7 +19,7 @@
         <br><br>
         <div>
             Selecione uma classe:
-            <select #classe (change="0")>
+            <select #classe (change)="0" >
                   <option value="alert-success" role="alert">
                      success 
                   </option>
@@ -33,19 +33,19 @@
                  info 
                   </option>
             </select>
-            
+
             <br><br>
 
-              <div class="alert" role="alert">
+              <div class="alert" role="alert"   [class.alert-success]="classe.value == 'alert-success'" >
                success
               </div>
-              <div class="alert" role="alert">
+              <div class="alert" role="alert" [class.alert-danger]="classe.value == 'alert-danger'">
                danger 
               </div>
-              <div class="alert" role="alert">
+              <div class="alert" role="alert" [class.alert-warning]="classe.value == 'alert-warning'">
                 warning
               </div>
-              <div class="alert" role="alert">
+              <div class="alert" role="alert" [class.alert-info]="classe.value == 'alert-info'">
               info 
               </div>
            
