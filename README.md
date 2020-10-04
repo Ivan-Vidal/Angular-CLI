@@ -4,6 +4,6 @@
 
 ## Primeiro-projeto - *Hello World*
 
-<img src="img/hello-world.png" style="width: 400px;">
+<img src="/img/hello-world.png" style="width: 400px;">
 
 ## Obrigado por chegar até aqui
