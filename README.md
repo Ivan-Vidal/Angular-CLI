@@ -4,6 +4,6 @@
 
 ## Primeiro-projeto - *Hello World*
 
-<img src="img/hello-word.png" style="width: 400px;">
+<img src="img/hello-world.png" style="width: 400px;">
 
-## Desenvolvido por Ivan Vidal
+## Obrigado por chegar até aqui
