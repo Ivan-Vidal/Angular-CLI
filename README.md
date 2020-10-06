@@ -9,6 +9,6 @@
 
 ## Usando Class & CSS Binding
 
-<img src="data-binding/src/assets/img/DataBinding.gif" style="width:500px;"/>
+<img src="data-binding/src/assets/img/DataBinding-.gif" style="width:500px;">
 
 ## Obrigado por chegar até aqui
