@@ -1,6 +1,8 @@
+<!--Property Binding & interpolação
+
 <section>
 
-<!--
+
 <p>O curso de angular e gosto do curso {{ CurtirCurso && CursAngular() }}</p>
 
 <section>
@@ -10,8 +12,10 @@
         <img [src]="urlImage"> property binding 
         <img bind-src="urlImage">Mesmo que o exemplo de cima
     </article>
-</section>-->
+</section>
 
+
+Binding CSS & Class
 <article>
     <h3>
         Binding CSS & Class
@@ -48,9 +52,33 @@
               <div class="alert" role="alert" [class.alert-info]="classe.value == 'alert-info'">
               info 
               </div>
+              <div class="alert alert-danger" role="alert" [style.display]="classe.value == 'alert-danger' ? 'block' : 'none' ">
+                Deu erro
+               </div>
            
         </div>
     
 </article>
-</section>
+</section>-->
 
+
+<section>
+  <article>
+<h3>Event Binding</h3><br>
+<div>
+<button (click)="botaoClicado()" class="btn btn-primary"> Me clique !</button>
+
+<br><br>
+
+<input type="text"  (keyup)="onKeyUp($event)" (keyup.enter)="salvarValor($event.target.value)" (blur)="salvarValor($event.target.value)" /> <br>
+<p> O valor Atual digitado é : {{ AtualValue }}</p>
+<p> O valor salvo é : {{ valorSalvo }}</p>
+
+<br><br>
+
+<span (mouseover)="OnmouseOverOut()" (mouseout)="OnmouseOverOut()" [class.highlight]="IsMouseOver">
+Passe o mouse aqui
+</span>
+</div>
+  </article>
+</section>
