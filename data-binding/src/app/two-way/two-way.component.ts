@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TwoWayComponent implements OnInit {
 
-nome: string = 'Ivan'
+nome: string = 'Um nome'
 
 pessoa = {
-  nome: "birl",
-  idade: 20
+  nome: "Meu nome",
+  idade: 22
 }
 
   constructor() { }
