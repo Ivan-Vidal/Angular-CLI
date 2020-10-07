@@ -83,13 +83,23 @@ Passe o mouse aqui
   </article>
 </section>-->
 
+
+<style>
+  .output{
+    align-items: center;
+  }
+</style>
 <section>
   <article>
-    <h3>Hello data!</h3>
     <div>
-      {{ nomeDoCurso }}
+     
 
-      <app-curso [nome]="nomeDoCurso"></app-curso>
+      <app-curso [nome]="nomeDoCurso"></app-curso> <br><br>
+<div class="output">
+  
+      <contador></contador>
+    </div>
     </div>
   </article>
 </section>
+
