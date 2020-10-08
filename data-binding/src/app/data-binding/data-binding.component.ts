@@ -9,6 +9,11 @@ export class DataBindingComponent implements OnInit {
   urlImage= 'http://lorempixel.com/400/200/sports/';
   url = "https://ivan-vidal.com"
 
+valorInicial = 15
+
+onMudouValor(evento){
+  console.log(evento.novoValor)
+}
   CurtirCurso = true
 
   AtualValue = ''

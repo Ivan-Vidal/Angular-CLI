@@ -97,7 +97,9 @@ Passe o mouse aqui
       <app-curso [nome]="nomeDoCurso"></app-curso> <br><br>
 <div class="output">
   
-      <contador></contador>
+      <contador [valor]="valorInicial" 
+      (mudouValor)="onMudouValor($event)"
+      ></contador>
     </div>
     </div>
   </article>
