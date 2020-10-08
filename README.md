@@ -9,10 +9,14 @@
 
 ## Usando Class & CSS Binding
 
-<img src="data-binding/src/assets/img/DataBinding-.gif" style="width:500px;">
+<img src="data-binding/src/assets/img/DataBinding-.gif" style="width:400px;">
 
 ## Usando o Event Binding
 
-<img src="data-binding/src/assets/img/DataBinding-event.gif" style="width:500px;">
+<img src="data-binding/src/assets/img/DataBinding-event.gif" style="width:400px;">
+
+## Input/Output Properties
+
+<img src="data-binding/src/assets/img/DataBinding-output.gif" style="width:400px;">
 
 ## Obrigado por chegar até aqui
