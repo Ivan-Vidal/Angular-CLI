@@ -23,7 +23,11 @@
   <div class="topo">
 </div>
 <div class="corpo">
-<app-data-binding></app-data-binding>
+<!--<app-data-binding></app-data-binding>-->
+<app-ciclo [ValorInicial]="valor" *ngIf="!deletarCiclo"></app-ciclo>
+<button (click)="mudarValor()">Mudar valor</button>
+<button (click)="destruirCiclo()">Delete</button>
+
 <br><br>
 </div>
 </div>
