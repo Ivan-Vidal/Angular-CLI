@@ -1,0 +1,12 @@
+
+<div class="container">
+    <form (ngsubmit)="loginCerto()"  [formGroup]="loginForm" >
+        <div class="form-group">
+            <label for="">User</label>
+            <input type="email" class="form-control" formControlName="email" placeholder="User">
+            <label for="">Password</label>
+            <input type="password" class="form-control" formControlName="password" placeholder="password">
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+    </form>
+</div>
