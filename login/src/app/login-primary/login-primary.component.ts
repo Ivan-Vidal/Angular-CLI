@@ -18,12 +18,12 @@ submit: boolean;
   
 
   ngOnInit(): void {
-    
+
     this.submit = false
 
     this.loginForm = this.fb.group({
       'email': ['', ],
-      'passowrd': ['', ],
+      'password': ['', ],
     });
   }
 

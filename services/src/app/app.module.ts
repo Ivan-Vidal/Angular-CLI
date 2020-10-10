@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CursoComponent } from './curso/curso.component';
-import {CursosService} from './curso/curso.service'
+import {CursosService} from './curso/curso.service';
+import { CriarCursoComponent } from './criar-curso/criar-curso.component'
 @NgModule({
   declarations: [
     AppComponent,
-    CursoComponent
+    CursoComponent,
+    CriarCursoComponent
   ],
   imports: [
     BrowserModule,
