@@ -1,0 +1,17 @@
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+
+}
+li{
+    margin-left: 20px;
+}
+ a{
+     text-decoration: none;
+     color: springgreen;
+     transition: all .3s ease-in;
+ }
+ a:hover{
+     color: rgb(17, 122, 43);
+ }

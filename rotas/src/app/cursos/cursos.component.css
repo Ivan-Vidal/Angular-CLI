@@ -1,0 +1,22 @@
+.container{
+    width:70%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    
+
+}
+.list{
+    list-style: none;
+    display: flex;
+    
+}
+li{
+    margin-left: 30px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+li:hover{
+    margin-top: -10px;
+    color: greenyellow;
+
+}

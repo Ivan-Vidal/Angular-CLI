@@ -1,11 +1,12 @@
-<nav class="navbar navbar-dark bg-dark">
- <div class="">
-  
+<nav class="">
+ <div class="navbar navbar-dark bg-dark">
+  <a routerLink=""  class="navbar-brand"> Ng2 Rotas</a>
   <ul class="navbar-nav mr-auto">
-    <li><a>Cursos</a></li>
-    <li><a>Login</a></li>
+    <li routerLinkActive="active"><a routerLink="/cursos">Cursos</a></li>
+    <li><a routerLink="/login">Login</a></li>
   </ul>
 </div>
 </nav>
-
-<router-outlet></router-outlet>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
