@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
 export interface User {
@@ -23,6 +23,7 @@ const httpOptions = {
 })
 export class ServicesLoginService {
   
+  mostrarMenuEmitter = new EventEmitter<boolean>();
  
   
   constructor(private http: HttpClient, private router: Router) { }
@@ -32,7 +33,7 @@ export class ServicesLoginService {
       obj => {
         console.log('logou com sucesso');
         localStorage.setItem('userLogado', JSON.stringify(obj));
-        this.router.navigateByUrl('/home');
+      
       },
       error => {
         console.log('erro ao logar');
