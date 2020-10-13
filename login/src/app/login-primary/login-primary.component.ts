@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { ServicesLoginService } from '../services-login.service';
 import { FormGroup, FormBuilder  } from '@angular/forms';
 @Component({
@@ -9,27 +8,21 @@ import { FormGroup, FormBuilder  } from '@angular/forms';
 })
 export class LoginPrimaryComponent implements OnInit {
  
-loginForm: FormGroup;
-
-submit: boolean;
+  loginForm: FormGroup;
+  submit: boolean;
 
   constructor(private ServicesLoginService: ServicesLoginService, private fb: FormBuilder) { }
 
-  
-
   ngOnInit(): void {
-
-    this.submit = false
-
     this.loginForm = this.fb.group({
       'email': ['', ],
       'password': ['', ],
     });
   }
 
-  loginCerto(){
+  login(){
+    console.log('login em progresso')
+    this.submit = true;
     this.ServicesLoginService.login(this.loginForm.value);
   }
-
-
 }

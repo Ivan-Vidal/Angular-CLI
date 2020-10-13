@@ -1,16 +1,15 @@
+<div class="shadow p-3 mb-5 bg-white rounded mt-5 text-center div-sigin container">
+    <form (ngSubmit)="login()" [formGroup]="loginForm">
+        <h1 class="h3 mb-3 font-weight-normal">Login</h1>
 
-<div class="container">
-    <form (ngsubmit)="loginCerto()"  [formGroup]="loginForm" class="form-group">
+        <div class="form-group">
+            <input type="email" class="form-control" name="email" formControlName="email" placeholder="E-mail"
+                 class="form-control border-color">
 
-        <h4>Login</h4>
-            <label for="">User</label>
-            <input type="email" class="form-control" name="email" formControlName="email" placeholder="User" required minlength="6">
+            <input type="password" name="password" formControlName="password" placeholder="Senha"
+                 class="form-control border-color mt-1">
+        </div>
 
-
-
-
-            <label for="">Password</label>
-            <input type="password" class="form-control" name="password" formControlName="password" placeholder="password" required minlength="6">
-            <button type="submit" class="btn btn-primary">Login</button>
+        <button type="submit" class="btn btn-lg btn-primary btn-block">Entrar</button>
     </form>
 </div>
