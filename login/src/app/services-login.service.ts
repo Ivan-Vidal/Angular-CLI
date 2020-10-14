@@ -29,11 +29,18 @@ export class ServicesLoginService {
       obj => {
         console.log('logou com sucesso');
         localStorage.setItem('userLogado', JSON.stringify(obj));
+        
         this.router.navigateByUrl('/home');
       },
       error => {
         console.log('erro ao logar');
       }
-    );
+    );  
+  }
+  usuarioLogado(): boolean {
+    if(localStorage.getItem('userLogado')){
+      return true;
+    }
+    return false;
   }
 } 
