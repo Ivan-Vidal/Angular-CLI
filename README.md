@@ -19,4 +19,8 @@
 
 <img src="data-binding/src/assets/img/DataBinding-output.gif" style="width:400px;">
 
-## Obrigado por chegar até aqui
+## Auth e Routes
+
+<img src="login/src/assets/img/Login.gif" style="width:400px;">
+
+## Obrigado pela visita !
