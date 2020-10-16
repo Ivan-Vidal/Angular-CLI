@@ -22,15 +22,16 @@ const httpOptions = {
 export class ServicesLoginService {
   mostrarMenuEmitter = new EventEmitter<boolean>();
   
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor( private http: HttpClient, private router: Router) { }
 
   login (user: User){
     this.http.post<User>('http://52.91.139.190/fsapi/users/login', user, httpOptions).subscribe(
       obj => {
         console.log('logou com sucesso');
         localStorage.setItem('userLogado', JSON.stringify(obj));
-        
+        this.user.user = obj.user;
         this.router.navigateByUrl('/home');
+        console.log(`O nome é ${this.user}`)
       },
       error => {
         console.log('erro ao logar');
