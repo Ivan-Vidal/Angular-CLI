@@ -1,14 +1,7 @@
-import { Injectable, EventEmitter } from '@angular/core';
+import { Injectable, EventEmitter, Inject } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { User } from './models/user'
 import { Router } from '@angular/router';
-export interface User {
-  email: string;
-  password: string;
-  token?:string;
-  user?:{
-      name: string;
-  }
-}
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -21,17 +14,23 @@ const httpOptions = {
 })
 export class ServicesLoginService {
   mostrarMenuEmitter = new EventEmitter<boolean>();
+  obj: object;
+  userInfo: User;
   
-  constructor( private http: HttpClient, private router: Router) { }
+  constructor(
+    private http: HttpClient, 
+    private router: Router) { }
 
-  login (user: User){
+  login(user: User){
     this.http.post<User>('http://52.91.139.190/fsapi/users/login', user, httpOptions).subscribe(
       obj => {
         console.log('logou com sucesso');
         localStorage.setItem('userLogado', JSON.stringify(obj));
-        this.user.user = obj.user;
+
+        this.userInfo = obj;
+        console.log('userInfo ' + this.userInfo)
+
         this.router.navigateByUrl('/home');
-        console.log(`O nome é ${this.user}`)
       },
       error => {
         console.log('erro ao logar');

@@ -1,8 +1,5 @@
 import { Component, Injectable, OnInit } from '@angular/core';
-import { ServicesLoginService } from '../services-login.service'
-
-
-
+import { User } from '../models/user'
 
 @Component({
   selector: 'app-home',
@@ -13,13 +10,11 @@ import { ServicesLoginService } from '../services-login.service'
   providedIn: 'root'
 })
 export class HomeComponent implements OnInit {
-  
- 
-  user: any = [];
-  
-  constructor(private ServicesLoginService: ServicesLoginService ) { }
 
-  ngOnInit(): void {
-  }
+  userInfo: User
+  
+  constructor() { }
+
+  ngOnInit(): void {}
 
 }
